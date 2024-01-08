@@ -9,6 +9,7 @@
   "author": "neptnium",
   "license": "ISC",
   "dependencies": {
-    "archiver": "^6.0.1"
+    "archiver": "^6.0.1",
+    "chalk": "^4.1.0"
   }
 }
