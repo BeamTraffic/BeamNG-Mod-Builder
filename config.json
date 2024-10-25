@@ -1,8 +1,8 @@
 {
-  "modName": "BuilderDefaultName",
-  "runAddons": false,
-  "ignoneDotFiles": true,
-  "ignoredPaths": [
-    "EXAMPLE"
-  ]
+    "modName": "BuilderDefaultName",
+    "runAddons": false,
+    "ignoneDotFiles": true,
+    "ignoredPaths": [
+        "EXAMPLE"
+    ]
 }

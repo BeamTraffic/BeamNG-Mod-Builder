@@ -31,13 +31,18 @@ Edit `config.json` to change the builder settings. Available options include:
 3. In this folder make a `tasks.json` file and put the following contents:
 ```json
 {
-  "tasks": [
-    {
-      "label": "build",
-      "type": "shell",
-      "command": "node .builder"
-    }
-  ]
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "clear ; node .builder",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
 }
 ```
 4. And now you can run the build task, default shortcut is: `Ctrl` + `Shift` + `B`
@@ -53,11 +58,11 @@ exports.enabled = false;
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 exports.preBuild = async function() {
-  await sleep(1000);
+    await sleep(1000);
 }
 
 exports.postBuild = async function() {
-  await sleep(1000);
+    await sleep(1000);
 }
 ```
 
